@@ -35,7 +35,7 @@ For teams upgrading from `.ai-system` v1 to v2.
 
 ### `.github/workflows/opencode.yml` — Opencode local trigger
 
-Enables running opencode agents directly from issue comments and PR review comments using `/oc`, `/opencode`, `/design`, `/od`, and `/opendesign` commands. Delegates to the central workflow runner in the [my-mobile-dev-hub/github-workflows](https://github.com/my-mobile-dev-hub/github-workflows) repository.
+Enables running opencode agents directly from issue comments and PR review comments using `/oc`, `/opencode`, `/design`, `/od`, and `/opendesign` commands. Delegates to the central workflow runner in the [sotonye-dagogo-dev/github-workflows](https://github.com/sotonye-dagogo-dev/github-workflows) repository.
 
 ---
 
@@ -76,14 +76,14 @@ Comment `/oc` on any issue or PR to trigger an opencode agent session via the co
 - **GitHub Organization**: For teams, set up an org-level secrets and environments to share across repos using this template.
 - **Repository Secrets**: If using the opencode workflow, ensure `GITHUB_TOKEN` has the necessary permissions (contents write, pull requests write, issues write).
 - **AI Tool**: Any AI coding tool that can read `.ai-context.md` at session start (CLI, IDE extension, API loop, or autonomous agent).
-- **GitHub Workflows Repo**: The opencode trigger workflow references `my-mobile-dev-hub/github-workflows`. Ensure this repository is accessible within your org, or update the workflow reference accordingly.
+- **GitHub Workflows Repo**: The opencode trigger workflow references `sotonye-dagogo-dev/github-workflows`. Ensure this repository is accessible within your org, or update the workflow reference accordingly.
 
 ---
 
 ## References
 
 - **`.ai-system` Framework Docs**: See [Sotonye0808/ai-system-template](https://github.com/Sotonye0808/ai-system-template) for the canonical `.ai-system` documentation and philosophy.
-- **Opencode Workflows**: See [my-mobile-dev-hub/github-workflows](https://github.com/my-mobile-dev-hub/github-workflows) for the central workflow runners.
+- **Opencode Workflows**: See [sotonye-dagogo-dev/github-workflows](https://github.com/sotonye-dagogo-dev/github-workflows) for the central workflow runners.
 
 ---
 
